@@ -4,7 +4,9 @@
 
 Pake is an open source project by [Tw93](https://tw93.fun) with 60.5K GitHub stars. Pake wraps any web page into a native desktop application using Tauri v2. The resulting app is typically under 5MB, compared to 80MB+ for Electron-based alternatives. Supports macOS, Windows, and Linux with features like shortcut customization, immersive windows, and system tray integration.
 
-Latest release: V3.15.1 (2026-07-18)
+License: GPL-3.0
+
+Latest release: V3.15.6 (2026-08-08)
 
 ## Key Features
 
@@ -60,6 +62,10 @@ Yes. Since Pake uses the system WebView, it handles cookies, localStorage, and a
 **How large is a typical Pake app?**
 
 Usually 2-5MB on macOS, depending on injected assets. Compare that to Electron apps which start at ~80MB because they bundle Chromium.
+
+**Can an AI agent drive Pake?**
+
+Yes, and the repository ships the contract for it. Pass `--json` for machine-readable output, describe an app declaratively with `--config app.json`, and read https://unpkg.com/pake-cli@latest/llms.txt for the full agent contract. Claude Code users can install the official skill with `/plugin marketplace add tw93/Pake` then `/plugin install pake@pake`.
 
 ## Links
 
